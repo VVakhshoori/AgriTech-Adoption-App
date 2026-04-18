@@ -37,24 +37,6 @@ This tool allows users to:
 
 ---
 
-## 📁 Repository Structure
-
-
-AgriTech_Adoption_App/
-│
-├── AgriTech_Adoption_App.py # Main Streamlit application
-├── requirements.txt # Python dependencies
-│
-├── Ensemble_Committee_Models/ # Trained ML models
-│ ├── Increase_Digital_Financial/
-│ ├── Decrease_CEA_R&D/
-│ └── ...
-│
-└── README.md
-
-
----
-
 ## ⚙️ Installation (Local Setup)
 
 ### 1. Clone the repository
