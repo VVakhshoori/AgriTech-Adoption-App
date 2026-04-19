@@ -31,7 +31,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-BASE_DIR = r"D:\PostDoc\Anaysis and mapping\Survey Analysis"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(BASE_DIR, "Ensemble_Committee_Models")
 
 SCENARIOS = ["Decrease", "Increase"]
