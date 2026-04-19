@@ -1,104 +1,156 @@
-# AgriTech-Adoption-App
-Streamlit app for agri-tech policy simulation
+# 🌾 Agri-Tech Policy Adoption Simulator
 
-A Streamlit-based machine learning application that simulates agricultural technology adoption under different policy, scenario, and technology configurations. The system uses an **ensemble of Random Forest models** to estimate adoption probabilities and uncertainty across multiple socioeconomic and policy settings.
+A **Streamlit-based machine learning application** that simulates the likelihood of adopting agricultural technologies under different policy and production scenarios. The system leverages an **ensemble of Random Forest models** to estimate adoption probability and uncertainty based on farmers’ socioeconomic characteristics.
 
 ---
 
 ## 🚀 Live App
-Once deployed, your app will be available here:  
-👉 https://your-app-name.streamlit.app
+
+👉 *Add your deployed link here after publishing on Streamlit Cloud*
+(e.g., https://agritech-adoption-app.streamlit.app)
 
 ---
 
 ## 📊 Project Overview
 
-This tool allows users to:
-- Simulate **agri-technology adoption likelihood**
-- Evaluate impacts of different:
-  - Policies (Financial, Education, R&D, etc.)
-  - Production scenarios (Increase / Decrease)
-  - Technologies (Digital, CEA, Genomic)
-- Input farmer socioeconomic profiles
-- Run **ensemble predictions using multiple trained models**
-- Perform **batch analysis for multiple farmer records**
-- Visualize adoption probability distributions
+This tool enables users to:
+
+* Simulate **agri-technology adoption probability**
+* Evaluate the impact of:
+
+  * Policy types (Financial, Education, R&D, Market, etc.)
+  * Production scenarios (Increase / Decrease)
+  * Technology types (Digital, CEA, Genomic)
+* Input farmer socioeconomic profiles interactively
+* Run **ensemble predictions across multiple trained models**
+* Perform **batch analysis** using uploaded datasets
+* Visualize prediction results and uncertainty ranges
 
 ---
 
 ## 🧠 Machine Learning Approach
 
-- Algorithm: **Random Forest (Scikit-learn)**
-- Ensemble structure: Multiple trained models per scenario-policy combination
-- Outputs:
-  - Mean adoption probability
-  - Min–Max uncertainty range
-  - Ensemble AUC score
+* Algorithm: **Random Forest (Scikit-learn)**
+* Structure: **Ensemble of models per scenario-policy combination**
+* Outputs:
+
+  * Mean adoption probability
+  * Probability range (min–max across models)
+  * Ensemble AUC score
+
+---
+
+## 📁 Repository Structure
+
+```text
+AgriTech-Adoption-App/
+│
+├── app.py                         # Main Streamlit application (entry point)
+├── requirements.txt               # Python dependencies
+├── Ensemble_Committee_Models/     # Trained ML models
+└── README.md
+```
 
 ---
 
 ## ⚙️ Installation (Local Setup)
 
 ### 1. Clone the repository
+
 ```bash
-git clone https://github.com/VVakhshoori/AgriTech_Adoption_App.git
-cd AgriTech_Adoption_App
-2. Install dependencies
+git clone https://github.com/your-username/AgriTech-Adoption-App.git
+cd AgriTech-Adoption-App
+```
+
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
-3. Run the app
-AgriTech_Adoption_App.py
+```
 
-📦 Requirements
-streamlit
-pandas
-numpy
-scikit-learn
-joblib
-plotly
-xlsxwriter
-openpyxl
+### 3. Run the application
 
-📥 Input Features
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📦 Requirements
+
+* streamlit
+* pandas
+* numpy
+* scikit-learn
+* joblib
+* plotly
+* xlsxwriter
+* openpyxl
+
+---
+
+## 📥 Input Features
 
 The model uses the following socioeconomic variables:
 
-Age
-Total farm area
-Employee number
-Farm revenue
-Asset value
-Hours on/off farm
-Education level
-Gender
-Immigration status
-Indigenous status
+* Age
+* Total farm area
+* Employee number
+* Farm revenue
+* Asset value
+* Hours on/off farm
+* Education level
+* Gender
+* Immigration status
+* Indigenous status
 
-📊 Outputs
-Single Prediction Mode
-Adoption probability
-Adoption category (Low / Moderate / Strong)
-Probability range across models
-Ensemble AUC
-Interactive bar chart of model outputs
-Batch Mode
-Upload CSV/XLSX files
-Run 16 scenario-policy combinations
-Export combined Excel results
+---
 
-🧪 Key Features
-Ensemble-based uncertainty estimation
-Scenario-policy simulation framework
-Interactive Streamlit dashboard
-Batch processing for multiple records
-Excel export functionality
-Plotly-based visualization
+## 📊 Outputs
 
-📌 Notes
-Models must be stored in the Ensemble_Committee_Models directory
-The app uses cached model loading for performance optimization
-Ensure all required dependencies are installed before running
+### 🔹 Single Prediction Mode
 
-👨‍💻 Author
+* Adoption probability
+* Adoption category (Low / Moderate / Strong)
+* Probability range across ensemble models
+* Ensemble AUC
+* Interactive visualization
 
-Developed by: Vali Vakhshoori
-PhD in Geography-GIS | Machine Learning | Spatial Analysis | Agricultural Systems Modeling
+### 🔹 Batch Processing Mode
+
+* Upload CSV or Excel files
+* Run all scenario-policy combinations
+* Export results as a consolidated Excel file
+
+---
+
+## ✨ Key Features
+
+* Ensemble-based prediction and uncertainty estimation
+* Scenario-policy simulation framework
+* Interactive web interface using Streamlit
+* Batch processing capability
+* Data export to Excel
+* Visualization using Plotly
+
+---
+
+## 📌 Notes
+
+* All trained models are stored in the `Ensemble_Committee_Models` directory
+* The app uses **relative paths**, making it compatible with cloud deployment
+* Ensure all dependencies in `requirements.txt` are installed before running locally
+
+---
+
+## 👨‍💻 Author
+
+**Vali Vakhshoori**
+PhD in Geography-GIS
+Machine Learning | Spatial Analysis | Agricultural Systems Modeling
+
+---
+
+## 📄 License
+
+This project is intended for research and academic purposes.
