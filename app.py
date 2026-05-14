@@ -236,6 +236,10 @@ with st.expander(f"📂 Batch Processing (16 Scenarios for {sel_tool})", expande
                                 df_proc[feat] = df_proc[feat].astype(str).str.strip().str.lower().map(clean_options)
                         
                         df_proc = map_raw_to_enc(df_proc)
+                        st.write(df_proc[feat_list].dtypes)
+                        st.write(df_proc[feat_list].head())
+                        for col in feat_list:
+                            st.write(col, df_proc[col].unique()[:10])
                         input_data = df_proc[feat_list].fillna(0).astype(float)
                         res_tuple = batch_predict(t_name, input_data)
                         
