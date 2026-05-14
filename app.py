@@ -231,7 +231,7 @@ with st.expander(f"📂 Batch Processing (16 Scenarios for {sel_tool})", expande
                     if feat_list:
                         df_proc = raw_df_original.copy()
                         for feat, mapping in MAPPINGS.items():
-                            if feat in df_proc.columns and df_proc[feat].dtype == 'object':
+                            if feat in df_proc.columns and not pd.api.types.is_numeric_dtype(df_proc[feat]):
                                 clean_options = {str(k).strip().lower(): v for k, v in mapping['options'].items()}
                                 df_proc[feat] = df_proc[feat].astype(str).str.strip().str.lower().map(clean_options)
                         
