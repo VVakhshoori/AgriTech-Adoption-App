@@ -8,7 +8,7 @@ import plotly.express as px
 import io 
 
 # --- 1. CONFIGURATION ---
-st.set_page_config(page_title="Agri-Tech Policy Simulator", layout="wide")
+st.set_page_config(page_title="Agri-Tech Adoption Simulator (ATAS)", layout="wide")
 
 st.markdown("""
     <style>
@@ -141,7 +141,7 @@ def batch_predict(target_name, input_df):
     return np.mean(all_probs_matrix, axis=1), np.min(all_probs_matrix, axis=1), np.max(all_probs_matrix, axis=1), np.mean(aucs)
 
 # --- 3. INTERFACE ---
-st.title("Agri-Tech Policy Adoption Simulator")
+st.title("Agri-Tech Adoption Simulator (ATAS)")
 
 with st.sidebar:
     st.header("1. Configuration")
