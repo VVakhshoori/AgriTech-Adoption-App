@@ -12,7 +12,7 @@ st.set_page_config(page_title="Agri-Tech Adoption Simulator (ATAS)", layout="wid
 st.caption(
     "Disclaimer: ATAS is an exploratory research tool based on survey responses from a limited sample of BC farmers. "
     "Model outputs represent estimated adoption probabilities and general trends rather than exact predictions. "
-    "Results should be used for educational and scenario-analysis purposes and not as the sole basis for decision-making."
+    "Results may be used for educational and exploratory purposes and not as the sole basis for decision-making."
 )
 st.markdown("""
     <style>
