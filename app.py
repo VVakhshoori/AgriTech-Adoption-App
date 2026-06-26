@@ -14,6 +14,7 @@ st.caption(
     "Model outputs represent estimated adoption probabilities and general trends rather than exact predictions. "
     "Results may be used for educational and exploratory purposes and not as the sole basis for decision-making."
 )
+st.link_button("📘 Open User Manual", "https://triaslab.ca/files/ATAS-Guide-May2026.pdf")
 st.markdown("""
     <style>
     .block-container { 
