@@ -6,8 +6,8 @@ A **Streamlit-based machine learning application** that simulates the likelihood
 
 ## 🚀 Live App
 
-👉 *Add your deployed link here after publishing on Streamlit Cloud*
-(e.g., https://agritech-adoption-app.streamlit.app)
+Link to the published web app on Streamlit Cloud
+https://agritech-adoption-app.streamlit.app
 
 ---
 
