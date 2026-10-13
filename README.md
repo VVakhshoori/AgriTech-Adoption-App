@@ -1,17 +1,17 @@
-# 🌾 Agri-Tech Policy Adoption Simulator
+# Agri-Tech Policy Adoption Simulator
 
 A **Streamlit-based machine learning application** that simulates the likelihood of adopting agricultural technologies under different policy and production scenarios. The system leverages an **ensemble of Random Forest models** to estimate adoption probability and uncertainty based on farmers’ socioeconomic characteristics.
 
 ---
 
-## 🚀 Live App
+## Live App
 
 Link to the published web app on Streamlit Cloud
 https://agritech-adoption-app.streamlit.app
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This tool enables users to:
 
@@ -28,7 +28,7 @@ This tool enables users to:
 
 ---
 
-## 🧠 Machine Learning Approach
+## Machine Learning Approach
 
 * Algorithm: **Random Forest (Scikit-learn)**
 * Structure: **Ensemble of models per scenario-policy combination**
@@ -40,7 +40,7 @@ This tool enables users to:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 AgriTech-Adoption-App/
@@ -53,7 +53,7 @@ AgriTech-Adoption-App/
 
 ---
 
-## ⚙️ Installation (Local Setup)
+## Installation (Local Setup)
 
 ### 1. Clone the repository
 
@@ -76,7 +76,7 @@ streamlit run app.py
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 * streamlit
 * pandas
@@ -89,7 +89,7 @@ streamlit run app.py
 
 ---
 
-## 📥 Input Features
+## Input Features
 
 The model uses the following socioeconomic variables:
 
@@ -106,9 +106,9 @@ The model uses the following socioeconomic variables:
 
 ---
 
-## 📊 Outputs
+## Outputs
 
-### 🔹 Single Prediction Mode
+### Single Prediction Mode
 
 * Adoption probability
 * Adoption category (Low / Moderate / Strong)
@@ -116,7 +116,7 @@ The model uses the following socioeconomic variables:
 * Ensemble AUC
 * Interactive visualization
 
-### 🔹 Batch Processing Mode
+### Batch Processing Mode
 
 * Upload CSV or Excel files
 * Run all scenario-policy combinations
@@ -124,7 +124,7 @@ The model uses the following socioeconomic variables:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 * Ensemble-based prediction and uncertainty estimation
 * Scenario-policy simulation framework
@@ -135,7 +135,7 @@ The model uses the following socioeconomic variables:
 
 ---
 
-## 📌 Notes
+## Notes
 
 * All trained models are stored in the `Ensemble_Committee_Models` directory
 * The app uses **relative paths**, making it compatible with cloud deployment
@@ -143,7 +143,7 @@ The model uses the following socioeconomic variables:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Vali Vakhshoori**
 PhD in Geography-GIS
