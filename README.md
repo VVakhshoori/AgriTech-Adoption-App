@@ -151,6 +151,6 @@ Machine Learning | Spatial Analysis | Agricultural Systems Modeling
 
 ---
 
-## 📄 License
+## License
 
 This project is intended for research and academic purposes.
